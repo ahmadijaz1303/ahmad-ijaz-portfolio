@@ -82,7 +82,7 @@ export default function Hero() {
                   <span className="h-3 w-3 rounded-full bg-red-400/80" />
                   <span className="h-3 w-3 rounded-full bg-amber-400/80" />
                   <span className="h-3 w-3 rounded-full bg-emerald-400/80" />
-                  <span className="ml-2 font-mono text-xs text-slate-500">inference_pipeline.py</span>
+                  <span className="ml-2 font-mono text-xs text-slate-500">llm_service.py</span>
                 </div>
 
                 <pre className="overflow-x-auto font-mono text-xs leading-6 text-slate-300">
