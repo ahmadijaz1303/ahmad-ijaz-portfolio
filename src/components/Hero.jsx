@@ -39,9 +39,7 @@ export default function Hero() {
 
             <Reveal delay={340}>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-500">
-                BSCS graduate from Riphah International University. Currently building real-time computer
-                vision systems at Matrix AE — from YOLO-based vehicle analytics to award-winning sign language
-                translation for accessibility.
+                BSCS graduate from Riphah International University. Currently building LLM/RAG and FastAPI services at ZNZ Technologies, with hands-on experience in AI automation and computer vision.
               </p>
             </Reveal>
 
@@ -86,18 +84,12 @@ export default function Hero() {
                 </div>
 
                 <pre className="overflow-x-auto font-mono text-xs leading-6 text-slate-300">
-                  <code className="cursor-blink">{`# Real-time CV pipeline
-model = load_tflite("talking_hands.tflite")
-cap = cv2.VideoCapture(0)
+                  <code className="cursor-blink">{`# LLM/RAG service
+response = await generate_with_fallback(query)
+context = retrieve_relevant_context(query)
 
-while cap.isOpened():
-    frame = cap.read()
-    landmarks = mediapipe.detect(frame)
-    prediction = model.predict(landmarks)
-
-    if prediction.confidence > 0.95:
-        output = translate_to_text(prediction)
-        speak(output)  # Sign → Speech ✓`}</code>
+return structured_response({ response, context })
+# FastAPI + RAG ✓`}</code>
                 </pre>
 
                 <div className="mt-6 grid grid-cols-2 gap-3">
